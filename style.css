@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  padding: 1rem;
+}
+
+.card-container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.card {
+  max-width: 400px;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  font-family: "Karla", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.first-card {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.first-card .card-heading {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+}
+
+.first-card .card-subheading {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+}
+
+.first-card .card-text {
+  color: hsl(218, 22%, 67%);
+}
+
+.second-card {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.second-card .card-heading {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.second-card .card-subheading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: hsl(204, 43%, 93%);
+}
+
+.second-card .card-subheading .price {
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.second-card .card-text {
+  color: hsl(0, 0%, 100%);
+}
+
+.second-card .card-button {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: hsl(71, 73%, 54%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.third-card {
+  background-color: hsl(179, 70%, 45%);
+}
+
+.third-card .card-heading {
+  color: hsl(0, 0%, 100%);
+}
+
+.third-card .card-text {
+  list-style: none;
+  color: hsl(204, 43%, 93%);
+}
+
+@media (width >= 600px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 3rem;
+  }
+  .first-card {
+    width: 100%;
+  }
+
+  .even-column {
+    display: flex;
+  }
+
+  .even-column .card {
+    flex: 1;
+  }
+}
